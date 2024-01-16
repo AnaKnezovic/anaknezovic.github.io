@@ -2,29 +2,45 @@
 <html>
 <head>
     <title>Ana Knezović's CV</title>
-     <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh; /* Full height */
+            background-color: pink; /* Sidebar color */
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .main-content {
+            flex-grow: 1;
             padding: 20px;
-            line-height: 1.6;
         }
-        .header {
-            font-size: 24px;
-            color: navy;
-        }
-        .section-title {
-            font-size: 20px;
-            color: darkblue;
-            margin-top: 20px;
+        .pdf-container {
+            width: 80%;
+            height: 90%;
         }
     </style>
 </head>
 <body>
-     <div class="sidebar">
-        <a href="cv.html">CV</a>
-        <a href="blog.html">Blog</a>
+
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="cv.html">View My CV</a>
+        <a href="blog.html">Read My Blog</a>
     </div>
     <div class="header">Ana Knezović</div>
     <p>Date of birth: 23 Jan 2002</p>
