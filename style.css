@@ -7,7 +7,7 @@ body {
 .sidebar {
     width: 200px;
     height: 100vh; /* Full height */
-    background-color: #f3f3f;
+    background-color: pink;
     padding-top: 20px;
 }
 .sidebar a {
