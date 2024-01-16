@@ -6,9 +6,17 @@ body {
 }
 .sidebar {
     width: 200px;
-    height: 100vh; /* Full height */
-    background-color: pink;
+    height: 100vh; /* Full height of the viewport */
+    background-color: pink; /* Sidebar color */
     padding-top: 20px;
+    position: fixed; /* Fixes the sidebar position relative to the viewport */
+    top: 0; /* Aligns the top of the sidebar with the top of the viewport */
+    left: 0; /* Aligns the left side of the sidebar with the left side of the viewport */
+}
+
+.main-content {
+    margin-left: 200px; /* Adjusts the main content area to not be hidden behind the fixed sidebar */
+    /* Other styling */
 }
 .sidebar a {
     padding: 10px 15px;
@@ -20,10 +28,7 @@ body {
 .sidebar a:hover {
     background-color: #ddd;
 }
-.main-content {
-    flex-grow: 1;
-    padding: 20px;
-}
+
 .active {
     font-weight: bold;
     color: black; /* or any color you prefer */
