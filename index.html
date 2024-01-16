@@ -5,24 +5,43 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
-        .menu-item {
-            display: block;
-            margin: 20px;
-            font-size: 24px;
+        .sidebar {
+            width: 200px;
+            height: 100vh; /* Full height */
+            background-color: #f3f3f3;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
             text-decoration: none;
+            font-size: 18px;
             color: black;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to Ana Knezović's Portfolio</h1>
+    <div class="sidebar">
+        <a href="cv.html">View My CV</a>
+        <a href="blog.html">Read My Blog</a>
+    </div>
 
-    <a href="cv.html" class="menu-item">View My CV</a>
-    <a href="blog.html" class="menu-item">Read My Blog</a>
+    <div class="main-content">
+        <h1>Welcome to Ana Knezović's Portfolio</h1>
+        <p>Explore my professional journey and personal insights.</p>
+    </div>
 
 </body>
 </html>
