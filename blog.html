@@ -34,7 +34,16 @@
             margin-left: 200px; /* Offset for the sidebar width */
             overflow-y: auto; /* Scrollbar for main content if needed */
         }
-        /* Additional styling here */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates three columns with equal space */
+            gap: 10px; /* Space between grid items */
+        }
+        .block {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -47,8 +56,8 @@
 
     <div class="main-content">
         <h1>Ana Knezović's Blog</h1>
-        <div>
-           Hello everyone! I’m Ana Knezović, a proud Croatian native born on January 23, 2002, currently immersed in the world of Information and Communication Technologies at the Faculty of Electrical Engineering and Computing (FER) in Zagreb. I am excited to share with you my journey, a blend of rigorous academic training, a passion for languages, and a diverse array of hobbies.
+        <div class="container">
+        <div class="block"> Hello everyone! I’m Ana Knezović, a proud Croatian native born on January 23, 2002, currently immersed in the world of Information and Communication Technologies at the Faculty of Electrical Engineering and Computing (FER) in Zagreb. I am excited to share with you my journey, a blend of rigorous academic training, a passion for languages, and a diverse array of hobbies.
 
 A Foundation in Zagreb: My Educational Path
 My academic journey began in the vibrant streets of Zagreb. I spent my elementary years at Osnovna škola Rudeš, a place where I first discovered my love for learning. This was followed by a transformative period at V. gimnazija, a secondary school that honed my analytical and critical thinking skills.
@@ -72,6 +81,7 @@ As I continue my educational journey and forge my path in the tech world, I rema
 
 I hope my story inspires you to pursue your passions relentlessly and embrace the diverse opportunities life offers. Thank you for joining me on this journey, and stay tuned for more updates from my world!
         </div>
+    </div>
     </div>
 
 </body>
