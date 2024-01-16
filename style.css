@@ -24,3 +24,8 @@ body {
     flex-grow: 1;
     padding: 20px;
 }
+.active {
+    font-weight: bold;
+    color: black; /* or any color you prefer */
+    background-color: #pink; /* optional: background color for active link */
+}
